@@ -1,0 +1,14 @@
+{
+  "name": "obs-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node main.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}
