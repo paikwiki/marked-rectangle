@@ -1,8 +1,8 @@
 {
-  "name": "obs-test",
+  "name": "marked-rectangle",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.ts",
   "scripts": {
     "start": "ts-node main.ts"
   },
