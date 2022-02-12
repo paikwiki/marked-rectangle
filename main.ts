@@ -1,8 +1,8 @@
-import { drawRectangle, getRect, markOnRectangle } from "./rectangle";
+import { drawRectangle, getRectangle, markOnRectangle } from "./rectangle";
 
 const main = () => {
   const markedRectangle = markOnRectangle({
-    rectangle: getRect({ width: 6, height: 4 }),
+    rectangle: getRectangle({ width: 6, height: 4 }),
     x: 4,
     y: 2,
     markerCharacter: "v",

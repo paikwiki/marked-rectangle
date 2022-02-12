@@ -1,4 +1,4 @@
-import { GET_RECT_ERROR_MESSAGE, MARK_ON_RECTANGLE_ERROR_MESSAGE } from "./constants";
+import { GET_RECTANGLE_ERROR_MESSAGE, MARK_ON_RECTANGLE_ERROR_MESSAGE } from "./constants";
 import { log } from "./log";
 
 interface Rectangle {
@@ -7,18 +7,18 @@ interface Rectangle {
   serializedRows: string;
 }
 
-interface GetRectParam {
+interface GetRectangleParam {
   width: number;
   height: number;
   filledWith?: string;
 }
-export const getRect = ({
+export const getRectangle = ({
   width,
   height,
   filledWith: backgroundCharacter = "o",
-}: GetRectParam): Rectangle => {
+}: GetRectangleParam): Rectangle => {
   if (width < 0 || height < 0)
-    throw new Error(GET_RECT_ERROR_MESSAGE)
+    throw new Error(GET_RECTANGLE_ERROR_MESSAGE)
   return {
     width,
     height,
